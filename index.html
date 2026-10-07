@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amigos Bet — Moedas Virtuais</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">AMIGOS<span>BET</span></div>
+    <div class="balance">Saldo: <strong id="balance">1.000</strong> 🪙</div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="tag">APENAS DIVERSÃO</p>
+        <h1>Faça sua escolha.<br><span>Torça e pontue.</span></h1>
+        <p>Plataforma de brincadeira entre amigos usando somente moedas virtuais.</p>
+      </div>
+    </section>
+
+    <div class="layout">
+      <section>
+        <h2>Eventos disponíveis</h2>
+        <div id="events" class="events"></div>
+      </section>
+
+      <aside class="ticket">
+        <h2>🎟️ Seu cupom</h2>
+        <div id="ticketItems"><p class="empty">Escolha uma cotação para começar.</p></div>
+        <div class="ticket-footer">
+          <label>Moedas:</label>
+          <input id="stake" type="number" min="1" value="100">
+          <div class="potential">Retorno possível: <strong id="potential">0</strong> 🪙</div>
+          <button id="betBtn" disabled>CONFIRMAR APOSTA VIRTUAL</button>
+        </div>
+      </aside>
+    </div>
+
+    <section class="ranking">
+      <h2>🏆 Ranking dos amigos</h2>
+      <div id="ranking"></div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
